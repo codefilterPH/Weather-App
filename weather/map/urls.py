@@ -3,4 +3,5 @@ from .import views
 
 urlpatterns = [
     path('', views.index, name="index"),
+    path('selected/<slug:pk>/', views.click, name="click"),
 ]
