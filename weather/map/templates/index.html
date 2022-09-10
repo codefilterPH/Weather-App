@@ -29,7 +29,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
           {% for country in countries %}
-          <a class="dropdown-item" href="{% url 'click' country.name %}">{{country.name}}</a>
+          <a class="dropdown-item" href="{% url 'click' country.name %} ">{{country.name}}</a>
           {% endfor %}
         </div>
 
@@ -38,7 +38,7 @@
     <form method="POST" class="form-inline my-2 my-lg-0">
       {% csrf_token %}
         {{ form }}
-      <button class="btn btn-outline-success btn-sm mr-1 my-2 my-sm-0" type="submit">Search City</button>
+      <button class="btn btn-outline-success btn-sm mr-1 my-2 my-sm-0 ml-2" type="submit">Search City</button>
     </form>
   </div>
 </nav>
